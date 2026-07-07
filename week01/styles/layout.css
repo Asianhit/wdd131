@@ -3,12 +3,14 @@
     margin: 0;
 }
 body {
-	font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
 }
 
 h1, footer {
 	text-align: center;
-	background-color: grey;
+	background-color: navy;
 	padding: 0.5rem;
 	color: #fff;
 }
@@ -50,6 +52,7 @@ main {
 .navigation a:hover {
 	text-decoration: underline;
 	text-decoration-color: yellow;
+    border: 1px solid
 }
 
 .content{
@@ -69,13 +72,15 @@ main {
 .items{
 	background-color: #fff;
 }
-/* .first-h1 {
+.first-h1 {
     background-color: #fff;
     color: #001;
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 20%;
     font-size: medium;
-} */
+    display: grid;
+    grid-column: 1/ -1;
+}
 h2{
 background-color: navy;
 color: #fff;
@@ -137,9 +142,28 @@ main{
 .card-content li {
     margin-bottom: 10px; 
 }
-img{
+
+#course-title{
+    display:block;
+    font-family: "Roboto", sans-serif;
+    background-color:navy;
+    text-align: center;
+	padding: 0.5rem;
+	color: #fff;
+    width: 100%
+}
+.profile-img {
     float: right;
     margin-left: 15px;
     margin-bottom: 15px;
-    padding: 1rem;
+    width: 150px; 
+    height: auto;
+}
+
+.flag-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 50px; 
+    height: auto;
 }
