@@ -22,14 +22,11 @@ p {
 }
 
 nav {
-	/* margin: 0 auto 2rem; */
-	max-width: 100%;
+    max-width: 100%;
 }
 
 main {
-	/* margin: 1rem auto; */
     max-width: 1200px;
-    /* padding: 0 1rem; */
 }
 
 .navigation {
@@ -40,7 +37,7 @@ main {
 	align-items: center;
 }
 .navigation li {
-	flex: 1 1 auto; /* What is the difference between auto and 100% flex-basis? - turn on link borders to view */
+    flex: 1 1 auto;
 }
 .navigation a {
 	font-weight: 700;
@@ -68,7 +65,6 @@ main {
     background-color: rgb(160, 158, 158);
     text-align: left;
     padding: 3rem 1.5rem;
-    /* border: 1px solid #ddd; */
     min-height: 200px;
 }
 .items{
@@ -164,7 +160,6 @@ main{
 
 .flag-img {
     float: inline-start;
-    /* display: inline-block; */
     vertical-align: middle;
     margin-left: 10px;
     width: 50px; 
