@@ -1,18 +1,36 @@
 @media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;           
+        width: 100%; 
+        padding: 15px 40px; 
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
     #menu {
         display: none; 
+    }
+
+    nav {
+        margin: 0; 
     }
 
     .navigation {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
         background-color: transparent;
     }
 
-    
     .navigation a {
         display: block;
         padding: 10px 15px;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
