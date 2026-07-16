@@ -25,6 +25,9 @@ header, footer{
     max-width: 100%;
     position: relative; 
 }
+p{
+    font-weight:700;
+}
 
 main h1{
     background-color: white;
