@@ -31,6 +31,10 @@ main h1{
     color: black;
     text-align: center;
 }
+main { 
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 nav{
     max-width: 700px;
