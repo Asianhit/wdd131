@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite City in Nigeria - Abuja</title>
+    <meta name="author" content="Samuel Christian Asian">
+    <meta name="description" content="A webpage design and development about my favorite city in Nigeria, Abuja.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Abuja, Nigeria</h1>
+    </header>
+
+    <main>
+  <section class="hero-container">
+    <picture>
+      <source srcset="images/hero-image-large.webp" media="(min-width: 1000px)">
+      <source srcset="images/hero-image-small.webp" media="(min-width: 550px)">
+      <img class="hero-image" src="images/hero-image.webp" alt="Abuja city view">
+    </picture>
+
+    <!-- Data Overlay Box -->
+    <div class="card card-data">
+      <h2 class="card-title">Data</h2>
+      <div class="card-body">
+        <p><strong>Area:</strong> 1,769 sq km</p>
+        <p><strong>Population:</strong> ~4,000,000</p>
+        <p><strong>Country:</strong> Nigeria</p>
+        <p><strong>Languages:</strong> English, Hausa, Gbagyi</p>
+        <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+        <p><strong>Time Zone:</strong> WAT (UTC+1)</p>
+        <p><strong>Calling Code:</strong> +234</p>
+        <p><strong>Internet TLD:</strong> .ng</p>
+      </div>
+    </div>
+
+    <!-- Weather Overlay Box -->
+    <div class="card card-weather">
+      <h2 class="card-title">
+        Weather   ⛅<i class="fa-solid fa-cloud-sun"></i>
+      </h2>
+      <div class="card-body">
+        <p><strong>Temperature:</strong> 27 °C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> 5 km/h</p>
+        <p><strong>Wind Chill:</strong> 32 °C</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Samuel Christian Asian | Cross River, Nigeria 🌲</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
