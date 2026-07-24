@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+main{
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+img{
+    width: 300px;
+    background-color: black;
+    animation: fade 15s;
+}
+@keyframes fade{
+0% {
+    opacity: 1;
+
+}
+
+}

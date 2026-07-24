@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite City in Nigeria - Abuja</title>
+    <meta name="author" content="Samuel Christian Asian">
+    <meta name="description" content="A webpage design and development about my favorite city in Nigeria, Abuja.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="site-header">
+            <h1>Abuja, Nigeria</h1>
+            <p class="subtitle">A personal showcase of my favourite city</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-label="Abuja city hero image">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/hero-large.webp">
+                <img src="images/hero-small.webp" alt="Landscape view of Abuja" loading="lazy">
+            </picture>
+        </section>
+
+        <section class="cards" aria-label="City overview cards">
+            <article class="card data">
+                <h2>City Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 1,769 sq km</li>
+                    <li><strong>Population:</strong> 3.6 Million</li>
+                    <li><strong>Capital:</strong> Federal Capital Territory</li>
+                    <li><strong>Languages:</strong> English, Hausa, Yoruba, Igbo</li>
+                    <li><strong>Currency:</strong> Nigerian Naira</li>
+                    <li><strong>Time Zone:</strong> UTC+1</li>
+                    <li><strong>Calling Code:</strong> +234</li>
+                    <li><strong>Internet TLD:</strong> .ng</li>
+                </ul>
+            </article>
+
+            <article class="card weather">
+                <h2>Weather <img src="images/weather.svg" alt="Weather icon" class="weather-icon-mobile"></h2>
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">10</span> °C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> <span id="wind">5</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="chill"></span></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> | Samuel Christian Asian | Cross River, Nigeria 🌲</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
