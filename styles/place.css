@@ -1,12 +1,12 @@
-/* --- Global Variables & Resets --- */
+
 :root {
-  /* Official Nigerian Flag Green & White Hex Codes */
-  --primary-color: #008751;   /* Nigerian Emerald Green */
-  --secondary-color: #008751; /* Keeping accent borders consistent */
-  --bg-color: #f4f8f5;        /* Subtitle off-white/green tint */
-  --card-bg: #ffffff;         /* Pure White */
-  --text-color: #222222;       /* Dark text for strong visual contrast */
-  --shadow-color: #000000;     /* Hex for shadow transparency */
+  
+  --primary-color: #008751;   
+  --secondary-color: #008751; 
+  --bg-color: #f4f8f5;        
+  --card-bg: #ffffff;         
+  --text-color: #222222;       
+  --shadow-color: #000000;     
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -30,7 +30,7 @@ header, footer {
   padding: 1.00rem;
 }
 
-/* --- Mobile Layout Grid --- */
+
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -45,13 +45,12 @@ main {
   border-radius: 8px;
 }
 
-/* --- Card Styles --- */
 .card {
   background-color: var(--card-bg);
   padding: 1.50rem;
   border-radius: 8px;
-  border-top: 4px solid var(--primary-color); /* Nigerian green accent top border */
-  box-shadow: 0px 4px 6px #0000001a;          /* Hex format with alpha */
+  border-top: 4px solid var(--primary-color); 
+  box-shadow: 0px 4px 6px #0000001a;          
 }
 
 .card h2 {

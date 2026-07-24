@@ -1,11 +1,11 @@
 @media (min-width: 768px) {
-    /* --- Main Container Relative Positioning --- */
+    
     main {
         position: relative;
-        display: block; /* Disables grid layout on main to allow absolute positioning of overlay cards */
+        display: block; 
     }
 
-    /* --- Hero Image Styling --- */
+    
     .hero {
         width: 100%;
     }
@@ -17,30 +17,30 @@
         object-fit: cover;
     }
 
-    /* --- Floating Cards Positioning --- */
+    
     .card {
         position: absolute;
-        width: 280px; /* Adjust width as needed */
-        background-color: rgba(255, 255, 255, 0.92); /* Semi-transparent background for readability */
+        width: 280px; 
+        background-color: rgba(255, 255, 255, 0.92); 
         padding: 1.25rem;
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         z-index: 10;
     }
 
-    /* Left Card: Data */
+    
     .card.data {
         top: 2rem;
         left: 2rem;
     }
 
-    /* Right Card: Weather */
+    
     .card.weather {
         bottom: 2rem;
         right: 2rem;
     }
 
-    /* --- Hide Mobile Weather Icon & Add Pseudoelement --- */
+    
     .weather-icon-mobile {
         display: none;
     }
