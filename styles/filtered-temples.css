@@ -154,6 +154,12 @@ nav {
     margin-top: 15px;
     border-radius: 4px;
 }
+nav ul{
+    display: flex;
+}
+header nav{
+    display: flex;
+}
 
 /* --- Media Query for Larger Screens --- */
 @media (min-width: 650px) {
