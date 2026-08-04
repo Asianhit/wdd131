@@ -22,7 +22,7 @@ const products = [
   {
     id: "ac-2000",
     name: "low voltage reactor",
-    averagerating: 3.9
+    averagerating: 7.9
   },
   {
     id: "jj-1969",
