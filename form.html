@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Samuel Christian Asian">
+    <meta name="description" content="This is a demo practice, on creating interactive form, following standard best practices.">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <p class="brand-title"><strong>Product Form</strong></p>
+    </header>
+
+    <main class="main-content">
+        <form action="review.html" method="get" title="Product Review Form" class="review-form" id="reviewForm">
+            <h2 class="form-title">Product Review</h2>
+
+            <fieldset class="form-group">
+                <legend class="form-legend">Product Review Form</legend>
+                <div class="field-item">
+                    <label for="product" class="form-label">Product Name</label>
+                    <select name="product" id="product" class="form-select" required></select>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group rating-group">
+                <legend class="form-legend">Overall Rating*</legend>
+                <div class="rating-options">
+                    <div class="rating-item">
+                        <input type="radio" id="star1" name="rating" value="1" class="form-radio" required>
+                        <label for="star1" class="rating-label">&#9734;</label>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="star2" name="rating" value="2" class="form-radio" required>
+                        <label for="star2" class="rating-label">&#9734;&#9734;</label>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="star3" name="rating" value="3" class="form-radio" required>
+                        <label for="star3" class="rating-label">&#9734;&#9734;&#9734;</label>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="star4" name="rating" value="4" class="form-radio" required>
+                        <label for="star4" class="rating-label">&#9734;&#9734;&#9734;&#9734;</label>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="star5" name="rating" value="5" class="form-radio" required>
+                        <label for="star5" class="rating-label">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend class="form-legend">Date of Installation</legend>
+                <div class="field-item">
+                    <label for="date" class="form-label">Date*</label>
+                    <input type="date" name="date" id="date" class="form-input" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend class="form-legend">Which product is most useful</legend>
+                <p class="field-subtitle">(Check all that applies)</p>
+                
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="satisfied" id="satisfied-tv" value="wall tv" class="form-checkbox">
+                        <label for="satisfied-tv" class="checkbox-label">warp equalizer</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="satisfied" id="satisfied-dishwasher" value="dish washer" class="form-checkbox">
+                        <label for="satisfied-dishwasher" class="checkbox-label">low voltage reactor</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="satisfied" id="satisfied-inverter" value="solar inverter" class="form-checkbox">
+                        <label for="satisfied-inverter" class="checkbox-label">flux capacitor</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="satisfied" id="satisfied-camera" value="security camera" class="form-checkbox">
+                        <label for="satisfied-camera" class="checkbox-label">power laces</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="satisfied" id="satisfied-washer" value="washing machine" class="form-checkbox">
+                        <label for="satisfied-washer" class="checkbox-label">time circuits</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend class="form-legend">Written Review (optional)</legend>
+                <div class="field-item">
+                    <label for="comment" class="form-label sr-only">Review Comment</label>
+                    <textarea name="comment" id="comment" class="form-textarea" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <legend class="form-legend">Your Name (optional)</legend>
+                <div class="field-item">
+                    <label for="name" class="form-label sr-only">Your Name</label>
+                    <input type="text" name="name" id="name" class="form-input" placeholder="Samuel Christian Asian">
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <input type="submit" value="Send Review" id="submitBtn" class="btn-submit">
+            </div>
+        </form>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="currentYear"></span> | Samuel Christian Asian | Cross River, Nigeria 🌲</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
