@@ -1,0 +1,140 @@
+@media screen and (min-width: 769px) {
+    .hero-section {
+        min-height: 80vh; 
+    }
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+
+    .hamburger {
+        display: none !important;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        gap: 2.25rem;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .nav-link {
+        font-size: 0.95rem;
+        padding: 0.5rem 0;
+        position: relative;
+        color: var(--text-dark);
+        transition: color var(--transition-fast);
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background-color: var(--accent-color);
+        transition: width var(--transition-fast);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--primary-color);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        width: 100%;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    #about-us h2,
+    #services-list h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .service-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        align-items: center;
+        padding: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .service-row.reverse .service-text {
+        order: 2;
+    }
+
+    .service-row.reverse .service-media {
+        order: 1;
+    }
+
+    .service-media {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+
+    #services-cta {
+        padding: 3rem 2rem;
+        max-width: 800px;
+        margin: 3rem auto 1rem;
+    }
+
+    #services-cta .btn {
+        display: inline-block;
+        width: auto;
+        padding: 0.85rem 2.5rem;
+    }
+
+    .listings-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr 1.75fr;
+        max-width: 1100px;
+        margin: 2rem auto;
+        padding: 0;
+        gap: 2.5rem;
+    }
+
+    .info-column,
+    .contact-form-card {
+        padding: 2rem;
+    }
+
+    .table-section {
+        max-width: 1100px;
+        margin: 2rem auto;
+        padding: 0;
+    }
+
+    .services-table th, 
+    .services-table td {
+        padding: 1rem 1.25rem;
+    }
+}

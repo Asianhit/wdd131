@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HavenGrid Real Estate</title>
+    <meta name="author" content="Samuel Christian Asian">
+    <meta name="description" content="Discover, filter, and secure modern residential and commercial listings with HavenGrid Realty. We empower buyers, renters, and investors through seamless digital property search, transparent service options, and direct agent connection to make finding your ideal haven effortless.">
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="styles/realty.css">
+    <link rel="stylesheet" href="styles/realty-large.css" media="(min-width: 769px)">
+    <script src="scripts/realty.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Company Logo -->
+            <img src="images/real-estate-logo.webp" alt="Company Logo" loading="lazy" class="logo">
+            <h1>HavenGrid Real Estate</h1>
+            
+            <!-- Hidden Checkbox Controller for Hamburger Navigation -->
+            <input type="checkbox" id="menu-toggle">
+
+            <!-- Hamburger Button (Visible on small screens, hidden on large screens) -->
+            <label class="hamburger" for="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about-us.html" class="nav-link">Services</a></li>
+                    <li><a href="property.html" class="nav-link">Properties</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <section id="contact-info" class="info-column">
+                <h2>Get in Touch</h2>
+                <p>Have questions about a property or our services? Visit our office or submit your inquiry below to connect with a specialized HavenGrid agent.</p>
+
+                <ul class="info-list">
+                    <li><strong>Address:</strong> 123 HavenGrid Way, Suite 400, Metropolitan City</li>
+                    <li><strong>Phone:</strong> (555) 019-2834</li>
+                    <li><strong>Email:</strong> contact@havengrid.com</li>
+                </ul>
+
+                <div class="office-hours">
+                    <h3>Office Hours</h3>
+                    <ul>
+                        <li><strong>Monday – Friday:</strong> 8:00 AM – 6:00 PM</li>
+                        <li><strong>Saturday:</strong> 9:00 AM – 3:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contact-form-card" class="contact-form-card">
+                <h2>Inquiry Form</h2>
+
+                <form id="dynamic-contact-form" action="thank-you.html" method="POST">
+                    <fieldset class="form-section-fieldset">
+                        <legend>Client Inquiry Details</legend>
+                        <p class="form-subtitle">Please fill out your details below to connect with an agent.</p>
+                    </fieldset>
+
+                    <fieldset class="form-section-fieldset">
+                        <legend>Personal Information</legend>
+
+                        <div class="form-control">
+                            <label for="user-name">Full Name *</label>
+                            <input type="text" id="user-name" name="fullName" required placeholder="e.g. Jane Doe">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="user-email">Email Address *</label>
+                            <input type="email" id="user-email" name="email" required placeholder="e.g. jane@example.com">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="inquiry-type">I am a... *</label>
+                            <select id="inquiry-type" name="userRole" required>
+                                <option value="" selected disabled>-- Select Your Role --</option>
+                                <option value="buyer">Home buyer</option>
+                                <option value="seller">Property Seller</option>
+                                <option value="investor">Commercial Investor</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="buyer-fields" class="form-section-fieldset conditional-fieldset">
+                        <legend>Buyer Preferences</legend>
+
+                        <div class="form-control">
+                            <label for="buyer-budget">Target Budget Tier</label>
+                            <select id="buyer-budget" name="buyerBudget">
+                                <option value=""selected disabled>Select Price Range</option>
+                                <option value="40k">$40,000 &amp; under</option>
+                                <option value="75k">$75,000 tier</option>
+                                <option value="90k">$90,000 tier</option>
+                                <option value="120k">$120,000 tier</option>
+                                <option value="150k">$150,000 &amp; up</option>
+                            </select>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="tour-date">Preferred Viewing Date</label>
+                            <input type="date" id="tour-date" name="tourDate">
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="seller-fields" class="form-section-fieldset conditional-fieldset">
+                        <legend>Property Listing Details</legend>
+
+                        <div class="form-control">
+                            <label for="property-address">Property Address to Sell</label>
+                            <input type="text" id="property-address" name="sellerAddress" placeholder="Street Address, City, Zip">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="estimated-value">Estimated Asking Price</label>
+                            <input type="text" id="estimated-value" name="sellerTargetPrice" placeholder="e.g. $120,000">
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="investor-fields" class="form-section-fieldset conditional-fieldset">
+                        <legend>Investment Criteria</legend>
+
+                        <div class="form-control">
+                            <label for="asset-type">Preferred Asset Class</label>
+                            <select id="asset-type" name="investorAssetType">
+                                <option value="" selected disabled>Choose Asset Class..</option>
+                                <option value="commercial-office">Commercial Office Space</option>
+                                <option value="multi-family">Multi-Family Residential</option>
+                                <option value="retail">Retail / Mixed-Use</option>
+                            </select>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="target-cap-rate">Target Cap Rate / Yield (%)</label>
+                            <input type="number" step="0.1" id="target-cap-rate" name="investorCapRate" placeholder="e.g. 7.5">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-section-fieldset">
+                        <legend>Message &amp; Submit</legend>
+
+                        <div class="form-control">
+                            <label for="user-message">Additional Information</label>
+                            <textarea id="user-message" name="message" rows="4" placeholder="Tell us more about your specific timeline, preferred neighborhoods, or property requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Your Inquiry</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Samuel Christian Asian 🌺 | Cross River, Nigeria 🌲</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

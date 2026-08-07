@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HavenGrid Real Estate</title>
+    <meta name="author" content="Samuel Christian Asian">
+    <meta name="description" content="Discover, filter, and secure modern residential and commercial listings with HavenGrid Realty. We empower buyers, renters, and investors through seamless digital property search, transparent service options, and direct agent connection to make finding your ideal haven effortless.">
+    
+    <!-- External Stylesheets Linked by Screen Media Size -->
+    <link rel="stylesheet" href="styles/realty.css">
+    <link rel="stylesheet" href="styles/realty-large.css" media="(min-width: 769px)">
+    <script src="scripts/realty.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Company Logo -->
+            <img src="images/real-estate-logo.webp" alt="Company Logo" loading="lazy" class="logo">
+            <h1>HavenGrid Real Estate</h1>
+
+            <!-- Hidden Checkbox Controller for Hamburger Toggle -->
+            <input type="checkbox" id="menu-toggle">
+
+            <!-- Hamburger Button (Visible on Small Screens) -->
+            <label class="hamburger" for="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about-us.html" class="nav-link">Services</a></li>
+                    <li><a href="property.html" class="nav-link">Properties</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="site-purpose" class="hero-card">
+            <div class="overlay-content">
+                <!-- <img src="images/real-10.webp" alt="Hero Image" loading="eager" id="hero-image"> -->
+                <h2>Find Your Ideal Haven</h2>
+                <p>Explore curated residential and commercial properties tailored to your budget and lifestyle.</p>
+                <a href="property.html" class="cta-button">Browse Properties</a>
+            </div>
+        </section>
+
+        <section id="user-scenario">
+            <h2>Client Scenarios</h2>
+            <div class="scenario-grid">
+                <article class="scenario">
+                    <h3>First-Time Home Buyer</h3>
+                    <p class="quote">I am looking for a modern 2-bedroom home in a specific price range. Can I filter properties by budget on one page?</p>
+                    <p class="solution">Dynamic property filters and instant booking help you move faster.</p>
+                    <a href="property.html">Search properties that fit your budget →</a>
+                </article>
+
+                <article class="scenario">
+                    <h3>Property Seller</h3>
+                    <p class="quote">I want to sell my home. What marketing services does HavenGrid offer, and how do I contact an agent?</p>
+                    <p class="solution">Transparent service listings and direct inquiry forms keep the process simple.</p>
+                    <a href="about-us.html">View our selling services →</a>
+                </article>
+
+                <article class="scenario">
+                    <h3>Rental Tenant</h3>
+                    <p class="quote">I need a pet-friendly apartment for lease. How can I filter available rentals and request a tour quickly?</p>
+                    <p class="solution">Lease filtering and quick-tour scheduling make rentals easier to explore.</p>
+                    <a href="property.html" class="scenario-link">Browse available rentals →</a>
+                </article>
+
+                <article class="scenario">
+                    <h3>Commercial Investor</h3>
+                    <p class="quote">I am searching for high-yield commercial properties. Can I view market insights and schedule a consultation?</p>
+                    <p class="solution">Dedicated commercial listings and consultation booking support informed investment decisions.</p>
+                    <a href="contact.html" class="scenario-link">Schedule an investor consultation →</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="client-services-comparison" class="table-section">
+            <h2>Solutions Tailored to Your Goals</h2>
+            <p class="section-intro">Compare our specialized services designed for buyers, sellers, and commercial investors.</p>
+
+            <div class="table-wrapper">
+                <table class="services-table">
+                    <caption>HavenGrid Real Estate Client Service Overview</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Feature / Service</th>
+                            <th scope="col">Home buyers</th>
+                            <th scope="col">Property Sellers</th>
+                            <th scope="col">Commercial Investors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Primary Objective</th>
+                            <td>Find affordable homes matching budget tiers</td>
+                            <td>Maximize property listing value and sale speed</td>
+                            <td>Identify high-yield commercial assets</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Key Tools &amp; Resources</th>
+                            <td>Interactive filters ($40k - $150k+), guided tours</td>
+                            <td>HD media staging, targeted digital marketing</td>
+                            <td>Cap rate calculators, market yield reports</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Pricing / Fee Model</th>
+                            <td>Free buyer representation</td>
+                            <td>Competitive commission structure</td>
+                            <td>Custom consulting and portfolio rates</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Dedicated Support</th>
+                            <td>Local buyer's specialist</td>
+                            <td>Listing and marketing agent</td>
+                            <td>Commercial investment advisor</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Next Action</th>
+                            <td><a href="property.html">View listings →</a></td>
+                            <td><a href="contact.html">Request valuation →</a></td>
+                            <td><a href="contact.html">Consult specialist →</a></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Samuel Christian Asian 🌺 | Cross River, Nigeria 🌲</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

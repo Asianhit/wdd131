@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services &amp; About Us - HavenGrid Real Estate</title>
+    <meta name="author" content="Samuel Christian Asian">
+    <meta name="description" content="Discover, filter, and secure modern residential and commercial listings with HavenGrid Realty. We empower buyers, renters, and investors through seamless digital property search, transparent service options, and direct agent connection to make finding your ideal haven effortless.">
+    
+    <!-- External Stylesheets Linked by Screen Media Size -->
+    <link rel="stylesheet" href="styles/realty.css">
+    <link rel="stylesheet" href="styles/realty-large.css" media="(min-width: 769px)">
+    <script src="scripts/realty.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Company Logo -->
+            <img src="images/real-estate-logo.webp" alt="Company Logo" loading="lazy" class="logo">
+            <h1>HavenGrid Real Estate</h1>
+
+            <!-- Hidden Checkbox Controller for Hamburger Toggle -->
+            <input type="checkbox" id="menu-toggle">
+
+            <!-- Hamburger Button (Visible on Small Screens) -->
+            <label class="hamburger" for="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about-us.html" class="nav-link active">Services</a></li>
+                    <li><a href="property.html" class="nav-link">Properties</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about-us">
+            <h2>About HavenGrid Realty</h2>
+            <p>At HavenGrid Real Estate, our mission is to eliminate the friction of buying, selling, and renting property by combining smart digital tools with dependable local expertise.</p>
+
+            <div class="values-grid">
+                <article class="value-card">
+                    <h3>Transparency</h3>
+                    <p>No hidden fees or unexpected surprises, just clear guidance from start to finish.</p>
+                </article>
+                <article class="value-card">
+                    <h3>Client Focus</h3>
+                    <p>Your property goals shape our approach, priorities, and recommendations.</p>
+                </article>
+                <article class="value-card">
+                    <h3>Market Expertise</h3>
+                    <p>We use deep local insight to help you make confident decisions in every market.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="services-list">
+            <h2>Our Real Estate Services</h2>
+
+            <article class="service-row">
+                <div class="service-text">
+                    <h3>Home Buyer Representation</h3>
+                    <p>We guide buyers through search, negotiations, and closing with a calm, informed process.</p>
+                    <a href="property.html">Search Listings for Your Budget &rarr;</a>
+                </div>
+                <div class="service-media">
+                    <img src="images/interior-1.webp" alt="Modern family home interior" loading="lazy">
+                    <img src="images/real-1.webp" alt="Modern family home exterior" loading="lazy">
+                </div>
+            </article>
+
+            <article class="service-row reverse">
+                <div class="service-media">
+                    <img src="images/interior-6.webp" alt="Staged luxury interior" loading="lazy">
+                </div>
+                <div class="service-text">
+                    <h3>Seller Listing &amp; Marketing</h3>
+                    <p>High-resolution media, staging, and targeted digital promotion help your property stand out.</p>
+                    <a href="contact.html">Request a Property Valuation &rarr;</a>
+                </div>
+            </article>
+        </section>
+
+        <section id="services-cta">
+            <h2>Ready to Start Your Real Estate Journey?</h2>
+            <p>Connect with one of our licensed HavenGrid agents today.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Samuel Christian Asian 🌺 | Cross River, Nigeria 🌲</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

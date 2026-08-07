@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - HavenGrid Real Estate</title>
+    <meta name="author" content="Samuel Christian Asian">
+    <meta name="description" content="Discover, filter, and secure modern residential and commercial listings with HavenGrid Realty. We empower buyers, renters, and investors through seamless digital property search, transparent service options, and direct agent connection to make finding your ideal haven effortless.">
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="styles/realty.css">
+    <link rel="stylesheet" href="styles/realty-large.css" media="(min-width: 769px)">
+    <script src="scripts/realty.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Company Logo -->
+            <img src="images/real-estate-logo.webp" alt="Company Logo" loading="lazy" class="logo">
+            <h1>HavenGrid Real Estate</h1>
+
+            <!-- Hidden Checkbox Controller for Hamburger Toggle -->
+            <input type="checkbox" id="menu-toggle">
+
+            <!-- Hamburger Button -->
+            <label class="hamburger" for="menu-toggle" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about-us.html" class="nav-link">Services</a></li>
+                    <li><a href="property.html" class="nav-link active">Properties</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="listings-feed">
+            <h2>Available Properties (10 Listings)</h2>
+            <p class="section-intro">Browse a curated collection of premium homes and investment-ready spaces tailored to your goals.</p>
+            
+            <div class="listings-grid">
+                <!-- Listing 1 -->
+                <article class="property-card" data-price="40000" data-view="exterior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Exterior</span>
+                        <picture>
+                            <source srcset="images/real-1-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/real-1-medium.webp" media="(min-width: 550px)">
+                            <img src="images/real-1.webp" alt="Cozy starter home exterior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Charming Starter Home</h3>
+                        <p class="price">$40,000</p>
+                        <p class="specs">2 Beds | 1 Bath | 850 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 2 -->
+                <article class="property-card" data-price="40000" data-view="interior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Interior</span>
+                        <picture>
+                            <source srcset="images/interior-1-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/interior-1-medium.webp" media="(min-width: 550px)">
+                            <img src="images/interior-1.webp" alt="Renovated living room interior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Modern Open Living Space</h3>
+                        <p class="price">$40,000</p>
+                        <p class="specs">2 Beds | 1 Bath | 850 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 3 -->
+                <article class="property-card" data-price="75000" data-view="exterior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Exterior</span>
+                        <picture>
+                            <source srcset="images/real-2-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/real-2-medium.webp" media="(min-width: 550px)">
+                            <img src="images/real-2.webp" alt="Suburban bungalow exterior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Suburban Craftsman Home</h3>
+                        <p class="price">$75,000</p>
+                        <p class="specs">3 Beds | 2 Baths | 1,200 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 4 -->
+                <article class="property-card" data-price="75000" data-view="interior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Interior</span>
+                        <picture>
+                            <source srcset="images/interior-2-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/interior-2-medium.webp" media="(min-width: 550px)">
+                            <img src="images/interior-2.webp" alt="Updated kitchen and dining area" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Upgraded Kitchen Suite</h3>
+                        <p class="price">$75,000</p>
+                        <p class="specs">3 Beds | 2 Baths | 1,200 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 5 -->
+                <article class="property-card" data-price="90000" data-view="exterior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Exterior</span>
+                        <picture>
+                            <source srcset="images/real-3-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/real-3-medium.webp" media="(min-width: 550px)">
+                            <img src="images/real-3.webp" alt="Two-story family home exterior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Contemporary Family Residence</h3>
+                        <p class="price">$90,000</p>
+                        <p class="specs">3 Beds | 2.5 Baths | 1,600 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 6 -->
+                <article class="property-card" data-price="90000" data-view="interior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Interior</span>
+                        <picture>
+                            <source srcset="images/interior-3-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/interior-3-medium.webp" media="(min-width: 550px)">
+                            <img src="images/interior-3.webp" alt="Spacious master suite interior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Spacious Master Bedroom</h3>
+                        <p class="price">$90,000</p>
+                        <p class="specs">3 Beds | 2.5 Baths | 1,600 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 7 -->
+                <article class="property-card" data-price="120000" data-view="exterior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Exterior</span>
+                        <picture>
+                            <source srcset="images/real-4-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/real-4-medium.webp" media="(min-width: 550px)">
+                            <img src="images/real-4.webp" alt="Luxury suburban home exterior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Executive Suburban Villa</h3>
+                        <p class="price">$120,000</p>
+                        <p class="specs">4 Beds | 3 Baths | 2,200 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 8 -->
+                <article class="property-card" data-price="120000" data-view="interior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Interior</span>
+                        <picture>
+                            <source srcset="images/interior-4-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/interior-4-medium.webp" media="(min-width: 550px)">
+                            <img src="images/interior-4.webp" alt="Luxury lounge with fireplace interior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Luxury Lounge &amp; Fireplace</h3>
+                        <p class="price">$120,000</p>
+                        <p class="specs">4 Beds | 3 Baths | 2,200 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 9 -->
+                <article class="property-card" data-price="150000" data-view="exterior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Exterior</span>
+                        <picture>
+                            <source srcset="images/real-5-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/real-5-medium.webp" media="(min-width: 550px)">
+                            <img src="images/real-5.webp" alt="Premium estate exterior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Premier HavenGrid Estate</h3>
+                        <p class="price">$150,000</p>
+                        <p class="specs">5 Beds | 4 Baths | 3,100 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+
+                <!-- Listing 10 -->
+                <article class="property-card" data-price="150000" data-view="interior">
+                    <div class="card-image-wrapper">
+                        <span class="badge">Interior</span>
+                        <picture>
+                            <source srcset="images/interior-5-large.webp" media="(min-width: 1000px)">
+                            <source srcset="images/interior-5-medium.webp" media="(min-width: 550px)">
+                            <img src="images/interior-5.webp" alt="Chef kitchen and island interior" width="1500" height="750" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="card-info">
+                        <h3>Gourmet Chef Kitchen</h3>
+                        <p class="price">$150,000</p>
+                        <p class="specs">5 Beds | 4 Baths | 3,100 sq ft</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="fav-btn" aria-label="Favorite property">&#9825;</button>
+                        <a href="contact.html" class="btn">Schedule Viewing</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Samuel Christian Asian 🌺 | Cross River, Nigeria 🌲</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
