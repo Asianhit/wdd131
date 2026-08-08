@@ -137,4 +137,17 @@
     .services-table td {
         padding: 1rem 1.25rem;
     }
+    #hero-image {
+        min-height: 480px;
+    }
+
+    h2.lay-in {
+        top: 35%;
+        font-size: 2.75rem;
+    }
+
+    p.lay-in {
+        top: 58%;
+        font-size: 1.25rem;
+    }
 }
