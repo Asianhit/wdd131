@@ -7,12 +7,10 @@
     <meta name="author" content="Samuel Christian Asian">
     <meta name="description" content="Discover, filter, and secure modern residential and commercial listings with HavenGrid Realty. We empower buyers, renters, and investors through seamless digital property search, transparent service options, and direct agent connection to make finding your ideal haven effortless.">
     
-    <!-- External Stylesheets -->
     <link rel="stylesheet" href="styles/realty.css">
     <link rel="stylesheet" href="styles/realty-large.css" media="(min-width: 769px)">
     <script src="scripts/realty.js" defer></script>
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">  
@@ -20,21 +18,17 @@
 <body>
     <header>
         <div class="header-container">
-            <!-- Company Logo -->
             <img src="images/real-estate-logo.webp" alt="Company Logo" loading="lazy" class="logo">
             <h1>HavenGrid Real Estate</h1>
             
-            <!-- Hidden Checkbox Controller for Hamburger Navigation -->
             <input type="checkbox" id="menu-toggle">
 
-            <!-- Hamburger Button (Visible on small screens, hidden on large screens) -->
             <label class="hamburger" for="menu-toggle" aria-label="Toggle Navigation Menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </label>
 
-            <!-- Navigation Links -->
             <nav>
                 <ul class="nav-menu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
@@ -107,7 +101,7 @@
                         <div class="form-control">
                             <label for="buyer-budget">Target Budget Tier</label>
                             <select id="buyer-budget" name="buyerBudget">
-                                <option value=""selected disabled>Select Price Range</option>
+                                <option value="" selected disabled>Select Price Range</option>
                                 <option value="40k">$40,000 &amp; under</option>
                                 <option value="75k">$75,000 tier</option>
                                 <option value="90k">$90,000 tier</option>
@@ -147,11 +141,6 @@
                                 <option value="multi-family">Multi-Family Residential</option>
                                 <option value="retail">Retail / Mixed-Use</option>
                             </select>
-                        </div>
-
-                        <div class="form-control">
-                            <label for="target-cap-rate">Target Cap Rate / Yield (%)</label>
-                            <input type="number" step="0.1" id="target-cap-rate" name="investorCapRate" placeholder="e.g. 7.5">
                         </div>
                     </fieldset>
 
